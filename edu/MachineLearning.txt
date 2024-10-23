@@ -1,0 +1,33 @@
+Machine Learning enables algorithms to discover patterns within datasets, allowing them to make prediction on new data.
+
+Overview of Machine Learning Lifecycle
+
+1. Data Collection: images, text, numerical data
+2. Data pre-processing: cleaning data(), transforming (normilization and scaling), splitting into training and validation
+3. Choosing a model: decision trees, neural networks, suport vector machines, and deep learning architectures.
+4. Training the model: Model trained using training data, adjusts parameters to reduce predicted outputs versus actual outputs
+5. Evaluating the Model: using test data to access performance
+6. Fine-tuning: adjusting hyperparamters to improve performance
+7. Inference: Applying the learning pattern recogntion to new data
+
+3 Types of Machine Learning:
+
+1. Supervised Learning: Trained on labeled dataset, (has the answer sheet, learns from mistakes).
+There are two types:
+- Regression
+- Classification
+
+2. Unsupervised Learning: Tries to understrand the data (without the answer sheet) tries to understand the structure of it all
+There are two types:
+ - Clustering
+ - Dimensionality reduction
+
+3. Reinforcement Learning: where it takes actions, resulting in a reward or a penalty, trying to maximize the reward over time
+Two types:
+- Model-based reinforced learning
+- Model-free reinfored learning
+
+
+Further Learning:
+Transformers
+Point-Cloud Data
