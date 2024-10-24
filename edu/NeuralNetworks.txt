@@ -1,0 +1,24 @@
+Neural Networks densely interconnected set of neurons, where each neuron takes in a real-value input and produces a single-value output
+There are 3 layers: input, hidden layer, and output layer
+Can modify the weights that directly affect the output
+
+Neural Networks use Gradient Descent for Learning, they also are used because they are robust to noise in the data.
+
+Where single-layer neural networks, only learn linear functions.
+
+Multi-layer networks learn non-linear functions as well. Every activation function takes a single number and performs mathematical operations on it.
+
+How does a simple neuron work?
+Two input neurons X and Y, 1 output neuron Z
+i (Net Input) = aX + bY
+o (output) = f(i), where f is the activation function
+
+
+An activation function is a mathematical function applied to the output of a neuron to decide whether it should activated or not.
+We would update the weights and biases of the neurons on the basis of the error at the output. AKA back-propogation.
+
+ReLU: Rectified Linear unit, implemented in hidden layers for non-linearity allowing it to capture complex patterns. Prevents vanishing gradients, making training faster and efficient.
+Sigmoid: Used in binary classification, squashes the output to a range between 0 and 1
+Softmax: Used for multi-class classification to produce probability distributions
+
+Gradient-Based Learning: activation functions make backpropogation possible by providing the necessary gradients. These gradients help in updating the weights.
