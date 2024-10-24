@@ -22,3 +22,6 @@ Sigmoid: Used in binary classification, squashes the output to a range between 0
 Softmax: Used for multi-class classification to produce probability distributions
 
 Gradient-Based Learning: activation functions make backpropogation possible by providing the necessary gradients. These gradients help in updating the weights.
+
+Interconnections refer to how the neurons are connected to each other. These connections define how information flows through the network.
+

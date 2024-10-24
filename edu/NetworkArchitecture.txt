@@ -1,0 +1,31 @@
+Network Architectures
+
+/****  https://www.geeksforgeeks.org/introduction-to-ann-set-4-network-architectures/ **** Remove after
+
+
+
+1. Feedforward Neural Network:
+- Information flows in one direction, input to output.
+- The layers are fully connected meaning each neuron is connected with to all neurons in the next
+
+2. Recurrent Neural Network:
+- process sequential data by using loops that allow them to retain information from previous steps
+- stores information about the sequence so far in the hidden state
+- this memory-storing model is useful for LLMs and speech recognition as it is able to understand context
+
+3. Convolutional Neural Networks (CNNs):
+- designed to understand grid-like data such as images, videos
+- layers consist of convolutional layers (which learn to detect specific features in the data) and pooling layer (reduce spatial dimensions)
+
+4. Autoencoder:
+- A type of neural network used for unsupervised learning for feature extraction
+- work by learning to compress data and then reconstructing to its original form in the most efficient way possible
+- Encoder: takes input data, reduces dimensionality, learning a compact representation called a latency space
+- Latency Space: compressed representation of the data that captures essential patterns while discarding less important details
+- Reconstructs the original input from the compressed latent space. The goal is for the output to be as close as possible to the input.
+
+5. Generative Adversarial Network (GAN):
+- Comprises two networks, a generator and a discriminator, that compete against each other.
+- The generator creates fake data, while the discriminator tries to distinguish between real and fake.
+- Over time, the generator improves to realistic output.
+
