@@ -1,0 +1,21 @@
+Generative Adversarial Network (GAN): https://www.geeksforgeeks.org/generative-adversarial-network-gan/
+
+Used for unsupervised learning. GANs are made up of two neural networks, a generator and a discriminator.
+
+Adversarial learning:
+- generator attempts to fool the Discriminator, which is tasked with accurately distinguishing between generated and real data.
+- the better the generator becomes, the better the discriminator needs to become
+- the better the discriminator becomes, the better the generator needs to become
+- realistic, high quality samples are produced as a result of this competitive interaction
+- revolutionized generative modeling
+
+Types of GANs:
+- Vanilla GAN: Basic structure; simple and used for general tasks
+- Conditional GAN: Adds control by using conditional statements
+- Deep Convolutional GAN: Utilizes convolutional layers for more efficient and detailed image generation,
+- Laplacian Pyramid GAN: Uses multiple generators and discriminators across different resolution levels to progressively refine and generate high-quality images
+- Super Resolution GAN: Specialized for enhancing the resolution of low-quality images, focusing on up-scaling and adding fine details.
+
+
+
+
