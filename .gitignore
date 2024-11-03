@@ -1,6 +1,24 @@
-# This file is used to ignore files which are generated
-# ----------------------------------------------------------------------------
+# Ignore CLion and IDE files
+.idea/
+*.pro.user*
+CMakeLists.txt.user*
 
+# CMake generated files
+build/
+Build/
+cmake-build-debug/
+CMakeCache.txt
+CMakeFiles/
+*.cmake
+*.ninja
+*.ninja_deps
+*.ninja_log
+Testing/
+*.log
+.cmake/
+*.json
+
+# Ignore other common temporary files
 *~
 *.autosave
 *.a
@@ -35,11 +53,10 @@ Thumbs.db
 /.qmake.cache
 /.qmake.stash
 
-# qtcreator generated files
+# QtCreator generated files
 *.pro.user*
-CMakeLists.txt.user*
 
-# xemacs temporary files
+# XEmacs temporary files
 *.flc
 
 # Vim temporary files
@@ -68,8 +85,5 @@ CMakeLists.txt.user*
 *.pyc
 
 # Binaries
-# --------
 *.dll
 *.exe
-build/
-Build/

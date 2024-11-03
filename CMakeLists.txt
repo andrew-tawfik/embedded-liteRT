@@ -5,13 +5,23 @@ project(tpu-processor LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
+
+# TensorFlow Lite library location
+set(TFLITE_DIR /opt/tensorflow)
+
+# Include TensorFlow Lite headers
+include_directories(${TFLITE_DIR})
+
+# Path to TensorFlow Lite library
+set(TFLITE_LIB ${TFLITE_DIR}/bazel-bin/tensorflow/lite/libtensorflowlite.so)
+
+# Define executable and link TensorFlow Lite
 add_executable(tpu-processor main.cpp)
+target_link_libraries(tpu-processor ${TFLITE_LIB})
 
-# If linking stdc++ is needed, uncomment the line below
-# target_link_libraries(tpu-processor stdc++)
-
+# Installation directories
 include(GNUInstallDirs)
 install(TARGETS tpu-processor
-    LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
-    RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
+        LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
+        RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
 )
