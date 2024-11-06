@@ -16,7 +16,13 @@ include_directories(${TFLITE_DIR})
 set(TFLITE_LIB ${TFLITE_DIR}/bazel-bin/tensorflow/lite/libtensorflowlite.so)
 
 # Define executable and link TensorFlow Lite
-add_executable(tpu-processor main.cpp)
+add_executable(tpu-processor main.cpp
+        detection.cpp
+        detection.h
+        model.cpp
+        model.h
+        device.cpp
+        device.h)
 target_link_libraries(tpu-processor ${TFLITE_LIB})
 
 # Installation directories
