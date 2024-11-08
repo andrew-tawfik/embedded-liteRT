@@ -1,7 +1,6 @@
 #ifndef DEVICE_H
 #define DEVICE_H
 
-
 /**
  * @class device
  * @brief Manages the initialization, configuration, and state of the Edge TPU or MCU device.
@@ -13,6 +12,8 @@
  */
 class device
 {
+private:
+
  // Initialize
  // Shutdown
  // Check and return device status
