@@ -13,6 +13,7 @@ set(EDGETPU_DIR /opt/edgetpu/libedgetpu)
 # Include TensorFlow Lite headers
 include_directories(${TFLITE_DIR})
 include_directories(${EDGETPU_DIR})
+find_package(absl CONFIG REQUIRED)
 
 # Path to TensorFlow Lite library
 set(TFLITE_LIB ${TFLITE_DIR}/bazel-bin/tensorflow/lite/libtensorflowlite.so)
@@ -26,7 +27,7 @@ add_executable(tpu-processor main.cpp
         model.h
         device.cpp
         device.h)
-target_link_libraries(tpu-processor ${TFLITE_LIB} ${EDGETPU_LIB})
+target_link_libraries(tpu-processor ${TFLITE_LIB} ${EDGETPU_LIB} absl::strings absl::status absl::span)
 
 # Installation directories
 include(GNUInstallDirs)
